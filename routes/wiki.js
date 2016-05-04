@@ -45,7 +45,7 @@ router.post('/', function(req, res, next) {
                 status: status
             });
 
-            return page.save().then(function(page) {
+            page.save().then(function(page) {
                 return page.setAuthor(user);
             });
 
