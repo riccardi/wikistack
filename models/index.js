@@ -12,6 +12,10 @@ var generateUrl = function (title) {
   }
 };
 
+//db.define takes 3 arguments
+//1. name of database
+//2. actual database fields
+//3. options
 var Page = db.define('page', {
             title: {
                 type: Sequelize.STRING,
